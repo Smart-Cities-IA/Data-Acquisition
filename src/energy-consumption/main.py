@@ -80,4 +80,4 @@ world_clean = world_clean[keep_countries_filter]
 
 world_clean["CountryName"] = world_clean["CountryName"].apply(lambda name: clean_country_name(name))
 
-world_clean.to_csv("output/energy_consumption.csv")
+world_clean.to_csv("exports/energy_consumption.csv")
