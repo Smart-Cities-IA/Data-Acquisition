@@ -14,20 +14,20 @@ The project is composed of three Python modules:
 This module contains the code for cleaning the data from the export folder and for the development of the dashboard.
 The Dashboard is done with the Python library Plotly Dash.
 #### Energy-Consumption
-This module is responsible for reading the csv raw data (Indicators.csv) downloaded Kaggle.
+This module is responsible for reading the csv raw data (Indicators.csv) downloaded Kaggle. 
 We selected the right column we wanted to keep and we pivoted the table since all the kpi were contained in the same column which is not ideal for analysis. 
 This module exports the processed csv to the export folder.
 
 #### Twitter
 This module is responsible for acquiring data from Twitter for certain keywords/hashtags. 
 The data is fetched using Twitter API. 
-Since there's limitation to the Twitter API, we get the tweets count per hour for the 7 last days for each keywords/hashtags. 
+Since there's limitation to the Twitter API, we get the tweets count per hour for the 7 last days for each keywords/hashtags.  
 The end goal would be to automate this module to be run every week (since we get the data for the past 7 days). 
 After few months~years, we would have a valuable dataset to run more interesting time-series analysis. 
 
 ### Set up the data for energy-consumption module
 Since data should not be stored in git repositories, the energy consumption data (csv) should be placed in the energy-consumption/data folder. It can be downloaded at the following url:
-https://www.kaggle.com/datasets/kaggle/world-development-indicators?resource=download&select=Indicators.csv   
+https://www.kaggle.com/datasets/kaggle/world-development-indicators?resource=download&select=Indicators.csv  
 The archive should be decompressed and the file Indicators.csv should be placed under the raw-data folder.
 
 ## Run the code
