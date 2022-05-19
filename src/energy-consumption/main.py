@@ -1,7 +1,7 @@
 
 import pandas as pd
 
-world_data = pd.read_csv("data/Indicators.csv")
+world_data = pd.read_csv("raw-data/Indicators.csv")
 
 indicators_rename = {
     "Population, ages 0-14 (% of total)": "population_0_14_percent",
