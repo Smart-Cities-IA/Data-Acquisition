@@ -25,8 +25,8 @@ world_clean = world_clean.reset_index()
 # Get rid off the countries that are not real countries
 keep_countries_filter = ~world_clean["CountryName"].isin(countries_to_remove)
 world_clean = world_clean[keep_countries_filter]
-
 world_clean["CountryName"] = world_clean["CountryName"].apply(lambda name: clean_country_name(name))
+world_clean["CountryName"] = world_clean["CountryName"].apply(lambda country: "Russia" if country == "Russian Federation" else country)
 
 filtered_data = clean_data(world_clean)
 

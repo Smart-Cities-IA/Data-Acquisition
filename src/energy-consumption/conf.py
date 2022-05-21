@@ -46,5 +46,8 @@ countries_to_remove = [
     "Heavily indebted poor countries (HIPC)",
     "Latin America & Caribbean (developing only)",
     "Fragile and conflict affected situations",
-    "High income"
+    "High income",
+    "European Union",
+    "North America",
+    "Euro area"
 ]
