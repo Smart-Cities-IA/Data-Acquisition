@@ -47,10 +47,6 @@ source env/bin/activate
 ```
 pip install -r requirements.txt
 ```
-**Run script**
-```
-python main.py
-```
 **Deactivate the virtual environment**
 ```
 deactivate
