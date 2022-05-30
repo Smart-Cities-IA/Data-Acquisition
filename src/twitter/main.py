@@ -1,8 +1,8 @@
 import requests
 from datetime import date
 import pandas as pd
-from .conf import BASE_URL, TOKEN, keywords_conf
-from .clean import clean_data
+from conf import BASE_URL, TOKEN, keywords_conf
+from clean import clean_data
 
 def make_url(url, keyword):
     if " " in keyword:
